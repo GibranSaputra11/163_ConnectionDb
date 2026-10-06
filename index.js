@@ -33,3 +33,7 @@ app.get('/', (req, res, next) => {
             res.status(500).send('Error retrieving data from database');
         });
 });
+
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+})
